@@ -9,14 +9,14 @@ const query = graphql`
       edges {
         node {
           id
+          title
+          price
           image {
             fluid(maxHeight: 426) {
               src
               ...GatsbyContentfulFluid_tracedSVG
             }
           }
-          title
-          price
         }
       }
     }
